@@ -5,4 +5,4 @@ A minimal WordPress theme for photographers. A non-designed responsive template 
 
 Free to use, free to fork!
 
-Developed by Anthony Terrell / Airborne Labs
+Developed by [Anthony Terrell](http://anthonyterrell.com) / [Airborne Labs](http://airbornelabs.net)
