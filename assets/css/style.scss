@@ -1,0 +1,132 @@
+/*
+Theme Name: Shoot
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Anthony Terrell
+Author URI: http://anthonyterrell.com
+Description: A minimal responsive theme designed to keep photographers shooting and nothing more. No frills, just photos that look good on all devices.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: minimal, photography, responsive, simple, content
+*/
+
+// Variables
+$black: #1d1d1d;
+$white: #fff;
+$off-white: #fafafa;
+$light-grey: #ccc;
+$dark-grey: #555;
+
+// Mixins
+@mixin responsive-height($width, $ratio1: 16, $ratio2: 9) {
+	height: percentage($width / ($ratio1 * $ratio2));
+}
+
+// Global Declarations
+html {
+	-webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, strong, em,
+p, small, a {
+	display: inline-block;
+	font-family: 'Helvetica', 'Verdana', 'Arial', 'Georgia';
+}
+
+p {
+	margin: 10px 0;
+	line-height: 1.3;
+}
+
+a {
+	color: $black;
+	font-weight: bolder;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	img {
+		outline: none;
+		border: none;
+	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+// Header Declarations
+
+header {
+	width: 100%;
+}
+
+nav	{
+	text-align: center;
+	a{
+		font-size: 72px;
+		margin-top: -27px;
+		@media (max-width: 640px) {
+			font-size: 54px;
+		}
+		@media (max-width: 320px) {
+			font-size: 36px;
+		}
+	}
+	small	{
+		a {
+			font-size: 14px;
+			margin-top: 15px;
+			color: $dark-grey;
+		}
+	}
+}
+
+// Content Declarations
+section {
+	padding-bottom: 100px;
+}
+
+article {
+	width: 90%;
+	margin: 50px auto;
+	max-width: 1300px;
+	text-align: center;
+	img	{
+		width: 98%;
+		box-shadow: 0 3px 4px 2px $light-grey;
+		@include responsive-height(100);
+	}
+}
+
+.meta {
+	text-align: center;
+	a {
+		color: $dark-grey;
+		@media (max-width: 320px) {
+			font-size: 11px;
+		}
+	}
+}
+
+.pagination {
+	width: 55%;
+	margin: 20px auto 0 auto;
+	font-size: 14px;
+	text-align: center;
+	a {
+		text-align: center;
+	}
+}

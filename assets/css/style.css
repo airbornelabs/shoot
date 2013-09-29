@@ -1,0 +1,27 @@
+h1, h2, h3, strong, em,
+p, small, a {
+  display: inline-block;
+  font-family: 'Helvetica', 'Verdana', 'Arial', 'Georgia'; }
+
+p {
+  margin: 10px 0;
+  line-height: 1.3; }
+
+a {
+  font-weight: bolder;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a img {
+    outline: none;
+    border: none; }
+
+article {
+  width: 90%;
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1300px; }
+  article img {
+    width: 98%;
+    box-shadow: 0 3px 4px 2px #cccccc;
+    height: 69.44444%; }

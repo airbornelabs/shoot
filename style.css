@@ -1,0 +1,92 @@
+/*
+Theme Name: Shoot
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Anthony Terrell
+Author URI: http://anthonyterrell.com
+Description: A minimal responsive theme designed to keep photographers shooting and nothing more. No frills, just photos that look good on all devices.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: minimal, photography, responsive, simple, content
+*/
+html {
+  -webkit-overflow-scrolling: touch; }
+
+h1, h2, h3, strong, em,
+p, small, a {
+  display: inline-block;
+  font-family: 'Helvetica', 'Verdana', 'Arial', 'Georgia'; }
+
+p {
+  margin: 10px 0;
+  line-height: 1.3; }
+
+a {
+  color: #1d1d1d;
+  font-weight: bolder;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a img {
+    outline: none;
+    border: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.alignleft {
+  text-align: left; }
+
+.alignright {
+  text-align: right; }
+
+header {
+  width: 100%; }
+
+nav {
+  text-align: center; }
+  nav a {
+    font-size: 72px;
+    margin-top: -27px; }
+    @media (max-width: 640px) {
+      nav a {
+        font-size: 54px; } }
+    @media (max-width: 320px) {
+      nav a {
+        font-size: 36px; } }
+  nav small a {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555555; }
+
+section {
+  padding-bottom: 100px; }
+
+article {
+  width: 90%;
+  margin: 50px auto;
+  max-width: 1300px;
+  text-align: center; }
+  article img {
+    width: 98%;
+    box-shadow: 0 3px 4px 2px #cccccc;
+    height: 69.44444%; }
+
+.meta {
+  text-align: center; }
+  .meta a {
+    color: #555555; }
+    @media (max-width: 320px) {
+      .meta a {
+        font-size: 11px; } }
+
+.pagination {
+  width: 55%;
+  margin: 20px auto 0 auto;
+  font-size: 14px;
+  text-align: center; }
+  .pagination a {
+    text-align: center; }
